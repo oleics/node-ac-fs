@@ -21,6 +21,5 @@
   "dependencies": {
     "mkdirp": "^0.5.1",
     "rimraf": "^2.5.2"
-  },
-  "engine": "node >= 0.12.0"
+  }
 }
