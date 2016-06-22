@@ -1,0 +1,26 @@
+{
+  "name": "ac-fs",
+  "description": "Common and/or convenient file-system functions returning promises.",
+  "version": "0.0.0",
+  "author": "Oliver Leics <oliver.leics@gmail.com>",
+  "license": "MIT",
+  "repository": "oleics/node-ac-fs",
+  "keywords": [
+    "fs",
+    "files",
+    "folders",
+    "directories",
+    "directory",
+    "rimraf",
+    "empty",
+    "json",
+    "symlinks",
+    "promises"
+  ],
+  "main": "./index.js",
+  "dependencies": {
+    "mkdirp": "^0.5.1",
+    "rimraf": "^2.5.2"
+  },
+  "engine": "node >= 0.12.0"
+}
