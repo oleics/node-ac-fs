@@ -17,6 +17,7 @@ module.exports = {
 
   isFolder: isFolder,
   isFolderStrict: isFolderStrict,
+  isEmptyFolder: isEmptyFolder,
   readFolder: readFolder,
   mkFolder: mkFolder,
   rmFolder: rmFolder,
@@ -122,6 +123,15 @@ function isFolderStrict(p) {
       resolve(s.isDirectory());
     });
   });
+}
+
+function isEmptyFolder(p) {
+  return readFolder(p)
+    .then(function(files){
+      if(files.length === 0) return true;
+      return false;
+    })
+  ;
 }
 
 function readFolder(p) {
