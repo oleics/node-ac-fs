@@ -56,6 +56,8 @@ isFolder(path) -> boolean
 
 isFolderStrict(path) -> boolean
 
+isEmptyFolder(path) -> boolean
+
 readFolder(path) -> array of files
 
 mkFolder(path)
