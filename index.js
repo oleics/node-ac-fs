@@ -74,9 +74,9 @@ function readJsonFile(p) {
       try {
         d = JSON.parse(d.toString());
       } catch(err) {
-        return reject(err);
+        return Promise.reject(err);
       }
-      resolve(d);
+      return d;
     })
   ;
 }
